@@ -1,0 +1,64 @@
+---
+title       : Fire-Resistant Property UI
+subtitle    : Heat Release Rate UI product
+author      : Dongyoon Wee
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Background 
+
+1. Fire may bring about disastrous results on life and properties. Therefore it is very important to prevent fire accidents in advance.
+2. However, it is difficult to prevent fire accidents due to its diverse cause.
+3. One of effective solutions to reduce the damage is improving fire-resistant characteristic of surroundings.
+4. Accordingly, there are many products required to meet certain international or industrial standards in term of fire-resistant characteristic. 
+5. For those products, fire-resistant characteristic is very important property and sometimes spend lots of cost and time to develop fire-resistant characteristic.
+
+--- .class #id 
+
+## Prediction of fire-resistant property 
+
+1. Most of products are mixture of two materials, which makes even harder to predict the fire-resistant property. 
+
+2. One of alternative way to predict fire-resistant property is measuring heat release rate by using cone-calorimeter.
+
+3. The below image is cone-calorimeter.
+
+
+<image src = "http://www.sintef.no/ImageVault/Images/id_1438/width_370/height_266/preserveAspectRatio_0/conversionFormatType_WebSafe/scope_1/ImageVaultHandler.aspx" height='200px'></image>
+
+
+--- .class #id 
+
+## Heat release rate diagram UI
+
+1. This US shows the HRR data measured before.
+
+2. If you enter a number into 'Test ID', then the server will find the data according to ID. 
+
+3. At the main frame(right side), a HRR(Heat Release Rate) graph will be shown as below.
+
+```{r plot, fig.width=4, fig.height=3}
+ source("FR-Function.R")
+ hrr_plot(1)
+```
+
+--- .class #id 
+
+## Detail function
+
+1. You can adjust graph with changing the value below.
+
+2. Time max value : as time axis, it represents the maximum value of "X" axis
+
+3. HRR max value : as HRR axis, it represents the maximum value of "Y" axis
+
+4. Valley time : By this time(X axis), two maximum values(before/after valley time) are calculated an shown on the graph.
+
+
+--- .class #id 

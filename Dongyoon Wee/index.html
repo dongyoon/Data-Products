@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fire-Resistant Property UI</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fire-Resistant Property UI">
+  <meta name="author" content="Dongyoon Wee">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Fire-Resistant Property UI</h1>
+    <h2>Heat Release Rate UI product</h2>
+    <p>Dongyoon Wee<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Background</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Fire may bring about disastrous results on life and properties. Therefore it is very important to prevent fire accidents in advance.</li>
+<li>However, it is difficult to prevent fire accidents due to its diverse cause.</li>
+<li>One of effective solutions to reduce the damage is improving fire-resistant characteristic of surroundings.</li>
+<li>Accordingly, there are many products required to meet certain international or industrial standards in term of fire-resistant characteristic. </li>
+<li>For those products, fire-resistant characteristic is very important property and sometimes spend lots of cost and time to develop fire-resistant characteristic.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Prediction of fire-resistant property</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Most of products are mixture of two materials, which makes even harder to predict the fire-resistant property. </p></li>
+<li><p>One of alternative way to predict fire-resistant property is measuring heat release rate by using cone-calorimeter.</p></li>
+<li><p>The below image is cone-calorimeter.</p></li>
+</ol>
+
+<p><image src = "http://www.sintef.no/ImageVault/Images/id_1438/width_370/height_266/preserveAspectRatio_0/conversionFormatType_WebSafe/scope_1/ImageVaultHandler.aspx" height='200px'></image></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Heat release rate diagram UI</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>This US shows the HRR data measured before.</p></li>
+<li><p>If you enter a number into &#39;Test ID&#39;, then the server will find the data according to ID. </p></li>
+<li><p>At the main frame(right side), a HRR(Heat Release Rate) graph will be shown as below.</p></li>
+</ol>
+
+<pre><code class="r"> source(&quot;FR-Function.R&quot;)
+ hrr_plot(1)
+</code></pre>
+
+<p><img src="assets/fig/plot.png" alt="plot of chunk plot"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Detail function</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>You can adjust graph with changing the value below.</p></li>
+<li><p>Time max value : as time axis, it represents the maximum value of &quot;X&quot; axis</p></li>
+<li><p>HRR max value : as HRR axis, it represents the maximum value of &quot;Y&quot; axis</p></li>
+<li><p>Valley time : By this time(X axis), two maximum values(before/after valley time) are calculated an shown on the graph.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Prediction of fire-resistant property'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Heat release rate diagram UI'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Detail function'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
